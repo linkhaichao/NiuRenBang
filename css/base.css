@@ -12,6 +12,10 @@ html{
 body{
     font-size: 14px;
     font-family: "Mirosoft YaHei",sans-serif;
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
 }
 a{
     text-decoration: none;
@@ -38,93 +42,63 @@ img{
     display: block;
 }
 
-[class^="icon-"],[class*=" icon-"]{
+/*[class^="icon-"],[class*=" icon-"]{
     background: url("../img/sprites.png")no-repeat;
     background-size: 200px 200px;
+}*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
 }
 
+/*头部*/
+#niu-jiefa{
+    width:100%;
+    height: 44px;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+p{
+    padding: 13px 0;
+    text-align: center;
+    color: #030303;
+    font-size: 17px;
+    margin: 0;
+}
 
-/*公用分类和购物车的头部*/
-#jd_topBar {
-    width: 100%;
-    height: 45px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #e0e0e0;
-    position: absolute;
+/*脚注区域*/
+footer{
+    background-color: rgba(250, 250, 250, 0.9);
+    height:49px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-top: 1px solid rgba(178, 178, 178, 1);
+    box-sizing: border-box;
     z-index: 1000;
 }
-
-#jd_topBar .icon-back {
-    background-position: -20px 0;
-    width: 40px;
-    height: 44px;
-    display: block;
-    padding: 12px 9px;
-    position: absolute;
-    background-clip: content-box;
-    background-origin: content-box;
-    top: 0;
-    left: 0;
+footer>div{
+    width:33.333333%;
+    float: left;
 }
-
-#jd_topBar h2{
-    text-align: center;
+footer>div a{
+    display: inline-block;
     width: 100%;
     height: 100%;
-    font-size: 16px;
-    line-height: 45px;
-    font-family: sans-serif;
-    color:#000;
-    font-weight: inherit;
 }
-
-#jd_topBar form {
-    width: 100%;
-    padding: 7px 40px 0;
-    height: 100%;
+footer>div p{
+    padding:0;
+    font-size: 10px;
+    color: rgba(143, 142, 148, 1);
 }
-
-#jd_topBar form input {
-    border: 1px solid #fdfdfd;
-    width: 100%;
-    border-radius: 6px;
-    background-color: #fff;
-    height: 30px;
-
+footer>div img{
+    margin:auto;
+    margin-top: 7px;
+    width: 25px;
+    height: 25px;
 }
-
-#jd_topBar .icon-menu {
-    background-position: -60px 0;
-    display: block;
-    width: 40px;
-    height: 44px;
-    padding: 12px 10px;
-    background-clip: content-box;
-    background-origin: content-box;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/*复选框*/
-.jd-checkbox{
-    width:20px;
-    height:20px;
-    background: url("../img/shop-icon.png") no-repeat;
-    background-position: 0 0;
-    background-size: 50px 100px;
-    position: absolute;
-    top: 12px;
-    margin-left: 10px;
-}
-.jd-checkbox[checked]{
-    background-position: -25px 0;
-}
-
-
-
-
-
 
 
 

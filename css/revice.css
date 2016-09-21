@@ -1,17 +1,6 @@
 @charset "UTF-8";
 
-#niu-jiefa{
-    width:100%;
-    height: 44px;
-    background-color: rgba(250, 250, 250, 0.9);
-}
-p{
-    padding: 13px 0;
-    text-align: center;
-    color: #030303;
-    font-size: 17px;
-    margin: 0;
-}
+
 /*轮播图*/
 #slider {
     width: 100%;
@@ -108,11 +97,8 @@ p{
 
 #niu-revice .fl div:nth-of-type(1) a{
     display: inline-block;
-    float: right;
-    width: 31px;
-    height: 31px;
-    margin-right: 10%;
-    margin-top: 10%;
+    width: 100%;
+    height: 100%;
 }
 
 #niu-revice .fl div:nth-of-type(1) img{
@@ -132,25 +118,31 @@ p{
 }
 #niu-revice .fl div:nth-of-type(2)> div a{
     display: block;
-    width: 32px;
+    /*width: 32px;
     float: none;
     margin: auto;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 10px;*/
+    width: 100%;
+    height: 100%;
 }
 #niu-revice .fl div:nth-of-type(2)> div:nth-of-type(2){
     border-right:0;
 }
+#niu-revice .fl div:nth-of-type(2)> div a{
+    padding-top: 10px;
+}
 #niu-revice .fl div:nth-of-type(2)> div img{
-    width: 100%;
+    display: block;
+    width: 32px;
     float: none;
     margin: auto;
-    height: 100%;
+    height: 32px;
+    /* margin-top: 10px; */
 }
 #niu-revice .fl div:nth-of-type(2)> div:nth-of-type(2) img{
     width:32px;
     height:32px;
-    margin-top: 10px;
 }
 #niu-revice .fl div:nth-of-type(2)> div p{
     padding-top: 6px;
@@ -160,6 +152,7 @@ p{
 #niu-revice .fl.new-fl{
     margin-left: 2.5px;
 }
+/*审核*/
 #niu-shenhe{
     width:100%;
     margin-top: 16px;
@@ -187,46 +180,7 @@ p{
     font-size:18px;
     padding: 33px 0;
 }
-footer{
-    background-color: rgba(250, 250, 250, 0.9);
-    height:49px;
-    position: fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    border-top: 1px solid rgba(178, 178, 178, 1);
-    box-sizing: border-box;
-    z-index: 1000;
-}
-footer>div{
-    width:33.333333%;
-    float: left;
-}
-footer>div a{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-footer>div p{
-    padding:0;
-    font-size: 10px;
-    color: rgba(143, 142, 148, 1);
-}
-footer>div img{
-    margin:auto;
-    margin-top: 7px;
-    width: 25px;
-    height: 25px;
-}
-footer>div:nth-of-type(1){
 
-}
-footer>div:nth-of-type(2){
-
-}
-footer>div:nth-of-type(3){
-
-}
 
 
 
