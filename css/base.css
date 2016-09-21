@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*公共样式*/
+html{
+    -webkit-text-size-adjust: 100%;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "Mirosoft YaHei",sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul{
+    list-style: none;
+}
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+img{
+    display: block;
+}
+.clearfix::before,.clearfix::after{
+    content: '';
+    clear:both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: block;
+}
+
+[class^="icon-"],[class*=" icon-"]{
+    background: url("../img/sprites.png")no-repeat;
+    background-size: 200px 200px;
+}
+
+
+/*公用分类和购物车的头部*/
+#jd_topBar {
+    width: 100%;
+    height: 45px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    z-index: 1000;
+}
+
+#jd_topBar .icon-back {
+    background-position: -20px 0;
+    width: 40px;
+    height: 44px;
+    display: block;
+    padding: 12px 9px;
+    position: absolute;
+    background-clip: content-box;
+    background-origin: content-box;
+    top: 0;
+    left: 0;
+}
+
+#jd_topBar h2{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 45px;
+    font-family: sans-serif;
+    color:#000;
+    font-weight: inherit;
+}
+
+#jd_topBar form {
+    width: 100%;
+    padding: 7px 40px 0;
+    height: 100%;
+}
+
+#jd_topBar form input {
+    border: 1px solid #fdfdfd;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    height: 30px;
+
+}
+
+#jd_topBar .icon-menu {
+    background-position: -60px 0;
+    display: block;
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*复选框*/
+.jd-checkbox{
+    width:20px;
+    height:20px;
+    background: url("../img/shop-icon.png") no-repeat;
+    background-position: 0 0;
+    background-size: 50px 100px;
+    position: absolute;
+    top: 12px;
+    margin-left: 10px;
+}
+.jd-checkbox[checked]{
+    background-position: -25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
