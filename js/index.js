@@ -4,7 +4,7 @@
 //设置轮播图的小圆点的样式
 function createYuan() {
     //轮播图小圆点的生成
-    var slider = document.querySelector('#slider');
+    var slider = $('#slider').get(0);
     var ol = document.createElement("ol");
     slider.appendChild(ol);
     var sliderUl = slider.children[0];
@@ -21,30 +21,49 @@ function createYuan() {
 }
 //轮播图滚动
 var scrollPic = function () {
-    var slider = document.querySelector('#slider');
+    var slider = $('#slider').get(0);
     var width = slider.offsetWidth;
     console.log(width);
     var imgBox = slider.children[0];
     var pointBox = slider.children[1];
     var index = 1;
     var timer = null;
+    var $ul=$('#slider').find('ul');
+    //$ul.css("transform","translateX(" + index * width * (-1) + "px)");
     imgBox.style.transform = "translateX(" + index * width * (-1) + "px)";
+    imgBox.style.webkitTransform = "translateX(" + index * width * (-1) + "px)";
 //    加过渡
     function addTransition() {
         imgBox.style.transition = "all .3s ease 0s";
         imgBox.style.webkitTransition = "all .3s ease 0s";
+        //$ul.css("transform","translateX(" + index * width * (-1) + "px)");
+        //$ul.css("webkitTransform","translateX(" + index * width * (-1) + "px)");
+    }
+//    加过渡
+    function addTransition() {
+        imgBox.style.transition = "all .3s ease 0s";
+        imgBox.style.webkitTransition = "all .3s ease 0s";
+        //$ul.css('transition',"all .3s ease 0s");
+        // $ul.css('webkitTransition',"all .3s ease 0s");
     }
 
 //    除去过渡
     function removeTransition() {
         imgBox.style.transition = "none";
         imgBox.style.webkitTransition = "none";
+
+        //$ul.css('transition',"none");
+        //$ul.css('webkitTransition',"none");
     }
 
     //图片移动
     function setTransform(t) {
+
         imgBox.style.transform = "translateX(" + t + "px)";
         imgBox.style.webkitTransform = "translateX(" + t + "px)";
+       // $ul.css('transform',"translateX(" + t + "px)");
+        //$ul.css('webkitTransform',"translateX(" + t + "px)");
+
     }
 
     function yuanPlay(index) {
@@ -137,10 +156,10 @@ var scrollPic = function () {
 
     }, false);
 };
-window.onload = function () {
+$(function () {
     //轮播图小圆点的生成
     createYuan();
     //轮播图
     scrollPic();
-};
+})
 
