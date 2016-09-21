@@ -16,6 +16,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #fff;
+    padding-bottom: 49px;
 }
 a{
     text-decoration: none;
